@@ -1,0 +1,98 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f0e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: rosybrown;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.header{
+    background-color: #524a4a;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px;
+}
+.header h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.form{
+    padding: 100px 100px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.form-control input{
+    display: block;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    position: absolute;
+    top: 38px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+.form button{
+    background-color: #8e44ad;
+    width: 100%;
+    color: #fff;
+    display: block;
+    border: 2px solid #8e44ad;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 500;
+}
