@@ -13,31 +13,31 @@
         <h2>Enter the details</h2>
         
         </div>
-    <form class="form" name = "form" id="form">
+    <form class="form" action="submit.html" name = "form" id="form" onsubmit="return inputCheck()">
         <div class="form-control "> 
             <label for="firstname">First name:</label>
-            <input type="text" placeholder="e.g:Tom " id="firstname">
+            <input type="text" placeholder="e.g:Tom " name="firstname" id="firstname">
             <i class="fa fa-check-circle" id="success"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control  ">
             <label for="lastname">Last name:</label>
-            <input type="text" placeholder="e.g: cruise" id="lastname">
+            <input type="text" placeholder="e.g: cruise" name="lastname" id="lastname">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="email">Email:</label>
-            <input type="email" placeholder="name@gmail.com" id="email">
+            <input type="email" placeholder="name@gmail.com" name="email" id="email">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob">
+            <input type="date" name="dob" id="dob">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
@@ -45,28 +45,28 @@
         <address>
         <div class="form-control">
             <label for="street">Home address(street):</label>
-            <input type="text" placeholder="hello123" id="street">
+            <input type="text" placeholder="hello123" name="street" id="street">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="state">State</label>
-            <input type="text" placeholder="hello123" id="state">
+            <input type="text" placeholder="hello123" name="state" id="state">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="city">City</label>
-            <input type="text" placeholder="e.g: Chennai" id="city">
+            <input type="text" placeholder="e.g: Chennai" name="city" id="city">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="zip">Zip</label>
-            <input type="number" placeholder="600001" id="zip">
+            <input type="number" placeholder="600001" name="zip" id="zip">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
@@ -74,7 +74,7 @@
         </address>
         <div class="form-control">
             <label for="phone">Phone number</label>
-            <input type="number" placeholder="9876543210" id="phone">
+            <input type="number" placeholder="9876543210" name="phone" id="phone">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
@@ -82,26 +82,26 @@
         <div class="form-control">
             <label for="gender">Gender</label>
             <input type="radio" name="gender" value="male" id="1">Male
-            <input type="radio" name="gender" value="female" id="1">Female
-            <input type="radio" name="gender" value="other" id="1">Other
+            <input type="radio" name="gender" value="female" id="2">Female
+            <input type="radio" name="gender" value="other" id="3">Other
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="citizen">Citizenship</label>
-            <input type="radio" name="indian" value="citizen" id="citizen1">Citizen
-            <input type="radio" name="indian" value="Non-Citizen" id="citizen1">Non-Citizen
-            <input type="radio" name="indian"value="Permanent-Resident" id="citizen1">Permanent-Resident
+            <input type="radio" name="citizenship" value="citizen" id="citizen1">Citizen
+            <input type="radio" name="citizenship" value="Non-Citizen" id="citizen2">Non-Citizen
+            <input type="radio" name="citizenship"value="Permanent-Resident" id="citizen3">Permanent-Resident
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
         </div>
         <div class="form-control">
             <label for="martial">Martial status</label>
-            <input value="1" type="radio" id="status" name="martial" >Married
-            <input value="2" type="radio" id="status2" name="martial" >Un-married
-            <input value="3" type="radio" id="status3" name="martial" >Divorced
+            <input value="Married" type="radio" id="status" name="martial" >Married
+            <input value="Un-married" type="radio" id="status2" name="martial" >Un-married
+            <input value="Divorced" type="radio" id="status3" name="martial" >Divorced
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
@@ -109,11 +109,11 @@
         <div class="form-control">
             <label for="education">Education Details</label>
             <input type="checkbox" name="studies" value="bachelor's" id="101">bachelor's
-            <input type="text" name="studies3" placeholder="marks"id="marks">
-            <input type="checkbox" name="studies"value="Hsc" id="102">Hsc 
-            <input type="text" name="studies3" placeholder="marks" id="marks">
-            <input type="checkbox" name="studies"value="Sslc" id="103">Sslc 
-            <input type="text" name="studies3" placeholder="marks" id="marks">
+            <input type="float" name="studies3" placeholder="Enter CGPA percentage"id="marks">
+            <input type="checkbox" name="studies"value="Hsc" id="101">Hsc 
+            <input type="number" name="studies3" placeholder="marks" id="marks">
+            <input type="checkbox" name="studies"value="Sslc" id="101">Sslc 
+            <input type="number" name="studies3" placeholder="marks" id="marks">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small></small>
@@ -135,7 +135,6 @@
     </div>
 
     </form>
-
 
     <script src="scripts/script.js"></script>
 </body>
